@@ -5,95 +5,62 @@
 
 const config = {
     // 1. Configuración General
-    pageTitle: "Nuestro Aniversario ❤️‍🔥",
+    pageTitle: "Nuestro Aniversario ❤️",
 
     // 2. Música de Fondo
     music: {
-        path: "assets/Between Us.mp3", // Ruta del archivo de audio
-        volume: 0.3,                   // Volumen (0.0 a 1.0)
-        autoPlay: true                 // Intentar reproducir automáticamente
+        path: "assets/Between Us.mp3", // Coloca tu canción en la carpeta assets y actualiza el nombre aquí
+        volume: 0.3,
+        autoPlay: true
     },
 
     // 3. Pantalla de Carga
     loading: {
-        message: "Acompáñame a celebrar nuestro aniversario...",
+        message: "Tengo algo especial para ti...",
         buttonText: "Comenzar ✨",
-        clickHint: "Haz clic para comenzar"
+        clickHint: "Haz clic para descubrirlo"
     },
 
     // 4. Sección Hero (Inicio)
     hero: {
-        title: "Hace un año empezó algo increíble...",
-        startDate: "2025-01-20", // Fecha de inicio (YYYY-MM-DD)
-        finalText: "¡Vamos a recordar!", // Texto que aparece al finalizar el contador
-        scrollText: "Desliza para continuar"
+        title: "Hola mi amor...",
+        startDate: "2024-01-01", // FECHA IMPORTANTE (Año-Mes-Día)
+        finalText: "¡Te amo!",
+        scrollText: "Desliza para continuar",
+        heartCharacter: "❤️" // Emoji del corazón
     },
 
     // 5. Línea de Tiempo (Historia)
+    // Agrega tantos eventos como quieras copiando el bloque entre llaves {}
     timeline: [
         {
-            title: "👀 Primeros acercamientos...",
-            content: `Miraditas, saludos desde lejitos... Y ese día del "Hola, ¿Cómo estás?"
-                <br>Mientras tanto tú:`,
-            images: [
-                "assets/empanada1.jpg",
-                "assets/empanada2.jpg"
-            ],
-            footer: "Y así, día a día, el SENA fue testigo de ese romance que se acercaba..."
+            title: "El comienzo...",
+            content: `Aquí puedes escribir cómo empezó todo. La primera vez que se vieron, o ese momento especial.
+                <br>Puedes usar etiquetas HTML como &lt;br&gt; para saltos de línea.`,
+            images: [], // Agrega nombres de archivos en assets, ej: ["assets/foto1.jpg"]
+            footer: "Fecha o nota al pie"
         },
         {
-            title: "📲 El primer mensaje...",
-            content: `Luego de hacer una pequeña gestión, logré obtener tu instagram. Y cuando subiste esa foto en la
-                que te veías divina (como en todas) no dudé en escribirte. En arriesgarme y ver qué pasaba:`,
-            images: ["assets/mensaje1.jpg"],
-            footer: "(Parla pura, jajaja)"
+            title: "Nuestro primer viaje",
+            content: `Describe otro momento importante...`,
+            images: [],
+            footer: "Un recuerdo inolvidable"
         },
-        {
-            title: "🥂 La primera cita...",
-            content: `No tenemos fotos de ese día, solo vivimos el momento entre risas y nervios, hablamos sin parar y
-                disfrutamos del estar juntos, la anécdota de ese 31 de octubre es inolvidable. Era nuestra primera cita...`,
-            images: ["assets/acostados.png"],
-            footer: "Esa noche no dormimos así (pero casi, jajaja)"
-        },
-        {
-            title: "⌛ Aquellos días...",
-            content: `Seguimos compartiendo momentos, intercambiando mensajes, fotos, videos y, poco a poco, íbamos
-                conociéndonos más. Interesandonos el uno por el otro, conociendo nuestros gustos, nuestras
-                personalidades, nuestras manías, nuestras virtudes y nuestros defectos.`,
-            videos: ["assets/video.mp4", "assets/video.mp4"], // Ruta de videos
-            footer: "(Estos somos nosotros hablando)"
-        },
-        {
-            title: "❤️‍🔥 El día...",
-            content: `Aquél maravilloso 20 de enero de 2025 fue el día en que decidimos formalizar nuestro amor...`,
-            images: ["assets/20.jpg"],
-            footer: "(Si mal no recuerdo, esta foto fue ese día)",
-            extra: `<br>Y desde aquel entonces, iniciamos un año lleno de muchas aventuras, vivencias, risas, llantos... millones de
-              recuerdos y emociones que hoy atesoro en lo más profundo de mi corazón.`
-        }
+        // Copia y pega más eventos aquí...
     ],
 
     // 6. Galería de Fotos
     gallery: {
-        title: "He aquí algunas de mis fotos favoritas...",
+        title: "Nuestros momentos",
         images: [
-            "assets/fotos/1737937691067.jpg",
-            "assets/fotos/IMG_20251213_184443.jpg",
-            "assets/fotos/1741696347687.jpg",
-            "assets/fotos/IMG_20251022_152744.jpg",
-            "assets/fotos/e318c8de5cdb4996918fed348dbefb95.jpg",
-            "assets/fotos/1734052261338.jpg",
-            "assets/fotos/IMG_20260104_151836.jpg",
-            "assets/fotos/1737334337583.jpg",
-            "assets/fotos/IMG_20241202_214446.jpg",
-            "assets/fotos/IMG_20251228_175617.jpg",
-            "assets/fotos/1739163421582.jpg",
-            "assets/fotos/IMG_20250802_211315.jpg"
+            // Agrega tus fotos aquí (asegúrate de ponerlas en la carpeta assets)
+            // "assets/ejemplo.jpg",
+            // "assets/otra_foto.jpg"
         ]
     },
 
     // 7. Mensaje Final
     finalMessage: {
-        content: "¡Gracias por tanto amor!<br>Sigamos escribiendo esta historia juntos..."
+        content: "Gracias por ser parte de mi vida.<br>Te amo."
     }
 };

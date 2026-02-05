@@ -2,8 +2,6 @@
 
 Una plantilla web interactiva y personalizable para crear un regalo digital único para tu pareja. Con efectos 3D, música, contador de días, línea de tiempo y galería de fotos.
 
-![Preview](assets/preview.png)
-
 ## ✨ Características
 
 - 🎨 **Pantalla de Carga Animada**: Símbolo de infinito con mensaje personalizable
@@ -18,13 +16,15 @@ Una plantilla web interactiva y personalizable para crear un regalo digital úni
 ## 🚀 Inicio Rápido
 
 ### Opción 1: Descarga Directa
+
 1. Haz clic en el botón verde **"Code"** → **"Download ZIP"**
 2. Descomprime el archivo en tu computadora
 3. ¡Listo para personalizar!
 
 ### Opción 2: Clonar con Git
+
 ```bash
-git clone https://github.com/tu-usuario/web-aniversario.git
+git clone https://github.com/Zwartmit/Web-aniversario.git
 cd web-aniversario
 ```
 
@@ -47,6 +47,7 @@ assets/
 ```
 
 **💡 Formatos soportados:**
+
 - **Imágenes**: `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`
 - **Audio**: `.mp3`, `.wav`, `.ogg`
 - **Video**: `.mp4`, `.webm`, `.ogg`
@@ -60,15 +61,18 @@ Abre el archivo `config.js` con cualquier editor de texto (Bloc de Notas, VS Cod
 #### 🎯 Secciones Principales:
 
 #### 1️⃣ **Configuración General**
+
 ```javascript
 pageTitle: "Nuestro Aniversario ❤️",
 favicon: "assets/favicon.svg" // Icono de la pestaña
 ```
+
 Este texto título y el ícono aparecerán en la pestaña del navegador.
 
 ---
 
 #### 2️⃣ **Música de Fondo**
+
 ```javascript
 music: {
     path: "assets/tu_cancion.mp3",  // Nombre de tu archivo de música
@@ -80,6 +84,7 @@ music: {
 ---
 
 #### 3️⃣ **Pantalla de Carga**
+
 ```javascript
 loading: {
     message: "Algo especial te espera...",
@@ -91,6 +96,7 @@ loading: {
 ---
 
 #### 4️⃣ **Sección Hero (Pantalla Principal)**
+
 ```javascript
 hero: {
     title: "Nuestra historia de amor...",
@@ -101,6 +107,7 @@ hero: {
 ```
 
 **⚠️ Formato de fecha:** `"YYYY-MM-DD"` (Año-Mes-Día)
+
 - ✅ Correcto: `"2024-02-14"` (14 de febrero de 2024)
 - ❌ Incorrecto: `"14-02-2024"` o `"02/14/2024"`
 
@@ -125,6 +132,7 @@ timeline: [
 ```
 
 **📌 Campos disponibles:**
+
 - `title`: Título del evento (puedes usar emojis 🎉)
 - `content`: Descripción (acepta HTML)
 - `images`: Array de rutas de imágenes (opcional)
@@ -133,6 +141,7 @@ timeline: [
 - `extra`: Contenido adicional al final (opcional)
 
 **💡 Para agregar más eventos**, copia y pega este bloque:
+
 ```javascript
 {
     title: "🎈 Nuevo evento",
@@ -145,6 +154,7 @@ timeline: [
 ---
 
 #### 6️⃣ **Galería de Fotos**
+
 ```javascript
 gallery: {
     title: "Nuestros momentos favoritos",
@@ -160,6 +170,7 @@ gallery: {
 ---
 
 #### 7️⃣ **Mensaje Final**
+
 ```javascript
 finalMessage: {
     content: "Gracias por ser parte de mi vida ❤️<br>Te amo más cada día..."
@@ -171,12 +182,14 @@ finalMessage: {
 ### Paso 3: Probar Localmente
 
 #### Opción A: Con Live Server (Recomendado)
+
 1. Instala [Visual Studio Code](https://code.visualstudio.com/)
 2. Instala la extensión **"Live Server"**
 3. Haz clic derecho en `index.html` → **"Open with Live Server"**
 4. Se abrirá automáticamente en tu navegador
 
 #### Opción B: Con Python
+
 ```bash
 # Python 3
 python -m http.server 8000
@@ -185,11 +198,13 @@ python -m http.server 8000
 ```
 
 #### Opción C: Con Node.js
+
 ```bash
 npx -y live-server .
 ```
 
 #### Opción D: Abrir directamente
+
 Simplemente haz doble clic en `index.html` (puede que algunos navegadores bloqueen la música por políticas de seguridad).
 
 ### 📱 Probando en tu Celular (WiFi)
@@ -199,12 +214,15 @@ Si quieres ver cómo queda en tu celular antes de publicar:
 1. Asegúrate de que tu celular y tu PC estén conectados a la **misma red WiFi**.
 2. Abre la terminal en tu PC (donde estás ejecutando `live-server`).
 3. Busca tu **dirección IP local**:
+
    - **Windows**: Escribe `ipconfig` y busca "Dirección IPv4" (ej: `192.168.1.15`).
    - **Mac/Linux**: Escribe `ifconfig` o `ip a` (ej: `192.168.1.15`).
 4. En el navegador de tu celular, escribe esa IP seguida del puerto `8080`:
+
    ```
    http://192.168.1.15:8080
    ```
+
    _(Reemplaza `192.168.1.15` por tu IP real)_
 
 ---
@@ -214,14 +232,14 @@ Si quieres ver cómo queda en tu celular antes de publicar:
 ### Opción 1: GitHub Pages (Recomendado)
 
 1. **Crea una cuenta en [GitHub](https://github.com/)**
-
 2. **Crea un nuevo repositorio:**
+
    - Haz clic en el botón **"+"** → **"New repository"**
    - Nombre: `mi-aniversario` (o el que prefieras)
    - Marca como **"Public"**
    - Haz clic en **"Create repository"**
-
 3. **Sube tus archivos:**
+
    - Arrastra todos los archivos del proyecto a la página del repositorio
    - O usa Git:
      ```bash
@@ -232,13 +250,13 @@ Si quieres ver cómo queda en tu celular antes de publicar:
      git remote add origin https://github.com/tu-usuario/mi-aniversario.git
      git push -u origin main
      ```
-
 4. **Activa GitHub Pages:**
+
    - Ve a **Settings** → **Pages**
    - En **"Source"**, selecciona **"main"** (o **"master"**)
    - Haz clic en **"Save"**
-
 5. **¡Listo!** Tu sitio estará disponible en:
+
    ```
    https://tu-usuario.github.io/mi-aniversario/
    ```
@@ -290,23 +308,27 @@ gsap.from(".timeline-event", {
 ## 🐛 Solución de Problemas
 
 ### ❌ La música no se reproduce
-**Causa:** Los navegadores bloquean la reproducción automática de audio.  
+
+**Causa:** Los navegadores bloquean la reproducción automática de audio.
 **Solución:** El usuario debe interactuar primero (hacer clic en el botón de inicio).
 
 ### ❌ Las imágenes no se muestran
-**Causa:** Ruta incorrecta en `config.js`.  
-**Solución:** Verifica que las rutas sean correctas:
+
+**Causa:** Ruta incorrecta en `config.js`.**Solución:** Verifica que las rutas sean correctas:
+
 - ✅ `"assets/foto.jpg"`
 - ❌ `"foto.jpg"` o `"/assets/foto.jpg"`
 
 ### ❌ El contador no funciona
-**Causa:** Formato de fecha incorrecto.  
-**Solución:** Usa el formato `"YYYY-MM-DD"`:
+
+**Causa:** Formato de fecha incorrecto.**Solución:** Usa el formato `"YYYY-MM-DD"`:
+
 - ✅ `"2024-02-14"`
 - ❌ `"14-02-2024"`
 
 ### ❌ Los videos no se reproducen
-**Causa:** Formato no soportado.  
+
+**Causa:** Formato no soportado.
 **Solución:** Convierte tus videos a `.mp4` usando [HandBrake](https://handbrake.fr/) o [CloudConvert](https://cloudconvert.com/).
 
 ---
@@ -347,11 +369,11 @@ web-aniversario/
 
 ## 💡 Consejos y Buenas Prácticas
 
-✅ **Optimiza tus imágenes** antes de subirlas (usa [TinyPNG](https://tinypng.com/))  
-✅ **Usa nombres descriptivos** para tus archivos (`primera_cita.jpg` en vez de `IMG_1234.jpg`)  
-✅ **Prueba en diferentes dispositivos** (móvil, tablet, desktop)  
-✅ **Guarda copias de seguridad** de tus archivos originales  
-✅ **Comprime videos grandes** para que carguen más rápido  
+✅ **Optimiza tus imágenes** antes de subirlas (usa [TinyPNG](https://tinypng.com/))
+✅ **Usa nombres descriptivos** para tus archivos (`primera_cita.jpg` en vez de `IMG_1234.jpg`)
+✅ **Prueba en diferentes dispositivos** (móvil, tablet, desktop)
+✅ **Guarda copias de seguridad** de tus archivos originales
+✅ **Comprime videos grandes** para que carguen más rápido
 
 ---
 
@@ -383,7 +405,7 @@ Si usaste esta plantilla y te gustó, ¡comparte tu experiencia! 💝
 
 ## 📞 Soporte
 
-¿Necesitas ayuda? Abre un [Issue](https://github.com/tu-usuario/web-aniversario/issues) en GitHub.
+¿Necesitas ayuda? Abre un [Issue](https://github.com/Zwartmit/Web-aniversario/issues) en GitHub.
 
 ---
 

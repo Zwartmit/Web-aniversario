@@ -1,21 +1,21 @@
-# 💝 Plantilla de Aniversario Web
+# 💝 Plantilla de aniversario web
 
 Una plantilla web interactiva y personalizable para crear un regalo digital único para tu pareja. Con efectos 3D, música, contador de días, línea de tiempo y galería de fotos.
 
 ## ✨ Características
 
-- 🎨 **Pantalla de Carga Animada**: Símbolo de infinito con mensaje personalizable
-- 🎵 **Música de Fondo**: Reproducción automática de tu canción favorita
-- ⏱️ **Contador Dinámico**: Calcula automáticamente años, meses y días desde tu fecha especial
-- 📖 **Línea de Tiempo**: Cuenta tu historia con eventos, fotos y videos
-- 🖼️ **Galería de Fotos**: Estilo polaroid con efectos hover
-- ✨ **Efectos Visuales**: Partículas 3D, animaciones suaves con GSAP
+- 🎨 **Pantalla de carga animada**: Símbolo de infinito con mensaje personalizable
+- 🎵 **Música de fondo**: Reproducción automática de tu canción favorita
+- ⏱️ **Contador dinámico**: Calcula automáticamente años, meses y días desde tu fecha especial
+- 📖 **Línea de tiempo**: Cuenta tu historia con eventos, fotos y videos
+- 🖼️ **Galería de fotos**: Estilo polaroid con efectos hover
+- ✨ **Efectos visuales**: Partículas 3D, animaciones suaves con GSAP
 - 📱 **Responsive**: Funciona perfectamente en móviles y tablets
-- 🎯 **Fácil de Personalizar**: Todo se configura desde un solo archivo
+- 🎯 **Fácil de personalizar**: Todo se configura desde un solo archivo
 
-## 🚀 Inicio Rápido
+## 🚀 Inicio rápido
 
-### Opción 1: Descarga Directa
+### Opción 1: Descarga directa
 
 1. Haz clic en el botón verde **"Code"** → **"Download ZIP"**
 2. Descomprime el archivo en tu computadora
@@ -28,9 +28,9 @@ git clone https://github.com/Zwartmit/Web-aniversario.git
 cd web-aniversario
 ```
 
-## 📝 Guía de Personalización
+## 📝 Guía de personalización
 
-### Paso 1: Preparar tus Archivos Multimedia
+### Paso 1: Preparar tus archivos multimedia
 
 #### 📁 Organiza tus archivos en la carpeta `assets/`:
 
@@ -58,9 +58,9 @@ assets/
 
 Abre el archivo `config.js` con cualquier editor de texto (Bloc de Notas, VS Code, Sublime Text, etc.).
 
-#### 🎯 Secciones Principales:
+#### 🎯 Secciones principales:
 
-#### 1️⃣ **Configuración General**
+#### 1️⃣ **Configuración general**
 
 ```javascript
 pageTitle: "Nuestro Aniversario ❤️",
@@ -71,7 +71,7 @@ Este texto título y el ícono aparecerán en la pestaña del navegador.
 
 ---
 
-#### 2️⃣ **Música de Fondo**
+#### 2️⃣ **Música de fondo**
 
 ```javascript
 music: {
@@ -83,7 +83,7 @@ music: {
 
 ---
 
-#### 3️⃣ **Pantalla de Carga**
+#### 3️⃣ **Pantalla de carga**
 
 ```javascript
 loading: {
@@ -95,7 +95,7 @@ loading: {
 
 ---
 
-#### 4️⃣ **Sección Hero (Pantalla Principal)**
+#### 4️⃣ **Sección Hero (Pantalla principal)**
 
 ```javascript
 hero: {
@@ -113,7 +113,7 @@ hero: {
 
 ---
 
-#### 5️⃣ **Línea de Tiempo (Tu Historia)**
+#### 5️⃣ **Línea de tiempo (Tu historia)**
 
 Aquí cuentas tu historia en eventos cronológicos. Puedes agregar tantos eventos como quieras:
 
@@ -153,7 +153,7 @@ timeline: [
 
 ---
 
-#### 6️⃣ **Galería de Fotos**
+#### 6️⃣ **Galería de fotos**
 
 ```javascript
 gallery: {
@@ -169,7 +169,7 @@ gallery: {
 
 ---
 
-#### 7️⃣ **Mensaje Final**
+#### 7️⃣ **Mensaje final**
 
 ```javascript
 finalMessage: {
@@ -179,13 +179,13 @@ finalMessage: {
 
 ---
 
-### Paso 3: Probar Localmente
+### Paso 3: Probar localmente
 
-#### Opción A: Con Live Server (Recomendado)
+#### Opción A: Con Live server (Recomendado)
 
 1. Instala [Visual Studio Code](https://code.visualstudio.com/)
-2. Instala la extensión **"Live Server"**
-3. Haz clic derecho en `index.html` → **"Open with Live Server"**
+2. Instala la extensión **"Live server"**
+3. Haz clic derecho en `index.html` → **"Open with Live server"**
 4. Se abrirá automáticamente en tu navegador
 
 #### Opción B: Con Python
@@ -207,7 +207,7 @@ npx -y live-server .
 
 Simplemente haz doble clic en `index.html` (puede que algunos navegadores bloqueen la música por políticas de seguridad).
 
-### 📱 Probando en tu Celular (WiFi)
+### 📱 Probando en tu celular (WiFi)
 
 Si quieres ver cómo queda en tu celular antes de publicar:
 
@@ -227,9 +227,9 @@ Si quieres ver cómo queda en tu celular antes de publicar:
 
 ---
 
-## 🌐 Publicar en Internet (GRATIS)
+## 🌐 Publicar en internet (GRATIS)
 
-### Opción 1: GitHub Pages (Recomendado)
+### Opción 1: GitHub pages (Recomendado)
 
 1. **Crea una cuenta en [GitHub](https://github.com/)**
 2. **Crea un nuevo repositorio:**
@@ -250,7 +250,7 @@ Si quieres ver cómo queda en tu celular antes de publicar:
      git remote add origin https://github.com/tu-usuario/mi-aniversario.git
      git push -u origin main
      ```
-4. **Activa GitHub Pages:**
+4. **Activa GitHub pages:**
 
    - Ve a **Settings** → **Pages**
    - En **"Source"**, selecciona **"main"** (o **"master"**)
@@ -275,9 +275,9 @@ Si quieres ver cómo queda en tu celular antes de publicar:
 
 ---
 
-## 🎨 Personalización Avanzada (Opcional)
+## 🎨 Personalización avanzada (Opcional)
 
-### Cambiar Colores
+### Cambiar colores
 
 Edita `style.css` y busca estas variables CSS:
 
@@ -290,7 +290,7 @@ Edita `style.css` y busca estas variables CSS:
 }
 ```
 
-### Modificar Animaciones
+### Modificar animaciones
 
 Las animaciones están en `script.js` usando GSAP. Busca secciones como:
 
@@ -305,7 +305,7 @@ gsap.from(".timeline-event", {
 
 ---
 
-## 🐛 Solución de Problemas
+## 🐛 Solución de problemas
 
 ### ❌ La música no se reproduce
 
@@ -333,7 +333,7 @@ gsap.from(".timeline-event", {
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías utilizadas
 
 - **HTML5** - Estructura
 - **CSS3** - Estilos y animaciones
@@ -344,7 +344,7 @@ gsap.from(".timeline-event", {
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del proyecto
 
 ```
 web-aniversario/
@@ -367,7 +367,7 @@ web-aniversario/
 
 ---
 
-## 💡 Consejos y Buenas Prácticas
+## 💡 Consejos y buenas prácticas
 
 ✅ **Optimiza tus imágenes** antes de subirlas (usa [TinyPNG](https://tinypng.com/))
 ✅ **Usa nombres descriptivos** para tus archivos (`primera_cita.jpg` en vez de `IMG_1234.jpg`)
@@ -395,11 +395,12 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
 ---
 
-## ❤️ Créditos
+## ❤️ Autor y Créditos
 
-Hecho con amor para celebrar el amor.
+- 📸 **Instagram**: [devmit.tech](https://www.instagram.com/devmit.tech)
+- 🎵 **TikTok**: [@zwart_mit](https://www.tiktok.com/@zwart_mit)
 
-Si usaste esta plantilla y te gustó, ¡comparte tu experiencia! 💝
+Si usaste esta plantilla y te gustó, ¡comparte tu experiencia mencionándome! 💝
 
 ---
 

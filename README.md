@@ -400,7 +400,7 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 - 📸 **Instagram**: [devmit.tech](https://www.instagram.com/devmit.tech)
 - 🎵 **TikTok**: [@zwart_mit](https://www.tiktok.com/@zwart_mit)
 
-Si usaste esta plantilla y te gustó, ¡comparte tu experiencia mencionándome! 💝
+Si usaste esta plantilla y te gustó, ¡comparte tu experiencia! 💝
 
 ---
 
